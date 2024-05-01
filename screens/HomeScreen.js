@@ -6,6 +6,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useDispatch, useSelector } from "react-redux";
 import { selectLogin, selectSignup, selectUsers } from "../slices/authSlice";
 import { useNavigation, useRoute } from "@react-navigation/native";
+import { themeColors } from "../theme";
 
 export default function HomeScreen() {
   const navigation = useNavigation();
@@ -44,7 +45,12 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+      style={{
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: themeColors.bg,
+      }}
     >
       {userToDisplay.image && (
         <Image
@@ -53,11 +59,11 @@ export default function HomeScreen() {
           className="mb-7 rounded-full"
         />
       )}
-      <Text className="mb-7 text-lg">
+      <Text className="mb-7 text-lg text-white">
         Welcome to <Text className="font-bold">{userToDisplay.fullName}'s</Text>{" "}
         Page
       </Text>
-      <Text className="mb-7 text-base font-bold">
+      <Text className="mb-7 text-base font-bold text-white">
         Email: <Text className="font-normal">{userToDisplay.email}</Text>
       </Text>
       <TouchableOpacity

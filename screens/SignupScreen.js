@@ -121,7 +121,9 @@ export default function SignupScreen() {
             onPress={pickImage}
             className="flex justify-center items-center p-4 bg-gray-700 rounded-2xl mb-5"
           >
-            <Text className="text-white">Pick your profile picture</Text>
+            <Text className="text-white">
+              {image ? "Image Selected" : "Pick your profile picture"}
+            </Text>
           </TouchableOpacity>
           {/* <Button  title="Pick an image from camera roll" onPress={pickImage} /> */}
           <TouchableOpacity
