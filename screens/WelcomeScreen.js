@@ -14,7 +14,7 @@ export default function WelcomeScreen() {
 
   return (
     <SafeAreaView
-      className="flex-1"
+      className="flex-1 px-5"
       style={{ backgroundColor: themeColors.bg }}
     >
       <View className="flex-1 flex justify-around my-4">
@@ -24,8 +24,8 @@ export default function WelcomeScreen() {
         <View className="flex-row justify-center">
           <Image
             source={require("../assets/images/finger.jpeg")}
-            style={{ width: 350, height: 350 }}
-            className="rounded-full"
+            style={{ height: 300 }}
+            className="rounded-full w-full"
           />
         </View>
         <View className="space-y-4">

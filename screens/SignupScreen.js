@@ -65,7 +65,7 @@ export default function SignupScreen() {
   return (
     <View
       className="flex-1"
-      style={{ backgroundColor: themeColors.bg, paddingTop: ios ? 0 : 50 }}
+      style={{ backgroundColor: themeColors.bg, paddingTop: ios ? 0 : 30 }}
     >
       <SafeAreaView className="flex">
         <View className="flex-row justify-start">
@@ -76,7 +76,7 @@ export default function SignupScreen() {
             <FontAwesomeIcon icon={faArrowLeft} size={24} color="black" />
           </TouchableOpacity>
         </View>
-        <View className="flex-row justify-center mb-10">
+        <View className="flex-row justify-center mb-5">
           <Image
             source={require("../assets/images/condo.jpeg")}
             style={{ width: 200, height: 200 }}
@@ -138,7 +138,7 @@ export default function SignupScreen() {
         <Text className="text-xl text-gray-700 font-bold text-center py-5">
           Or
         </Text>
-        <View className="flex-row justify-center gap-x-12">
+        <View className="flex-row justify-between">
           <TouchableOpacity className="p-2 bg-gray-700 rounded-2xl">
             <Image
               source={require("../assets/icons/instagram.png")}

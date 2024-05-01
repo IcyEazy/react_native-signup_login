@@ -52,9 +52,9 @@ export default function HomeScreen() {
         backgroundColor: themeColors.bg,
       }}
     >
-      {userToDisplay.image && (
+      {userToDisplay?.image && (
         <Image
-          source={{ uri: userToDisplay.image }}
+          source={{ uri: userToDisplay?.image }}
           style={{ width: 200, height: 200 }}
           className="mb-7 rounded-full"
         />
